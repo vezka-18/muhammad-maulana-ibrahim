@@ -1,0 +1,79 @@
+html,body{
+    height:100%;
+    margin:0;
+    font-family: Inter, Arial;
+    background:#5089d3;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .wrap{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:24px;
+    width:min(700px, 90%);
+    padding:30px;
+  }
+  
+  .card{
+    background:rgb(240, 40, 40);
+    border-radius:12px;
+    padding:28px;
+    min-height:120px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.18s ease-in-out
+  }
+  
+  /* 1. Bayangan halus */
+  .shadow-subtle{
+    box-shadow:20px 20px 20px rgba(0,0,0,0.08);
+  }
+  
+  /* 2. Bayangan kuat */
+  .shadow-deep{
+    box-shadow:0 18px 40px rgba(0,0,0,0.20);
+  }
+  
+  /* 3. Inset (masuk ke dalam) */
+  .shadow-inset{
+    box-shadow: inset 0 6px 18px rgba(0,0,0,0.10);
+  }
+  
+  /* 4. Glow belakang */
+  .shadow-glow{
+    position:relative;
+  }
+  .shadow-glow::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:100%;
+    transform:translate(-50%, 12px);
+    width:120%;
+    height:40%;
+    border-radius:50%;
+    background:rgba(0, 128, 255, 0.25);
+    filter:blur(22px);
+    z-index:-1;
+  }
+  
+  .card:hover{
+    transform:translateY(-6px);
+  }
+  
+  .label{
+    text-align:center;
+    opacity:.9;
+    font-size:14px;
+  }
+  
+  /* responsive */
+  @media (max-width:600px){
+    .wrap{
+      grid-template-columns:1fr;
+    }
+  }
+  

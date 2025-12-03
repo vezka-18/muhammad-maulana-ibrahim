@@ -1,0 +1,71 @@
+
+body {
+      background: url('bg.jpg');
+      background-size: cover;
+      background-position: center;
+      padding-top: 70px; 
+      font-family: Arial, sans-serif;
+    }
+
+    /* ================= NAVBAR ================= */
+.navbar-custom {
+      background-color: rgba(80, 64, 60, 0.9);
+      backdrop-filter: blur(4px);
+    }
+    .navbar-custom .nav-link,
+    .navbar-custom .navbar-brand {
+      color: #fff !important;
+    }
+
+    /* ================= A4 CONTAINER ================= */
+.a4paper {
+      width: 75%;
+      margin: auto;
+      background: #f4d400;
+      padding: 25px;
+      border-radius: 6px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.45);
+    }
+
+    /* ================= FOTO PROFIL ================= */
+.photo-wrapper {
+      background: #007bff;
+      padding: 12px;
+      border-radius: 15px;
+      width: 240px;
+      text-align: center;
+      box-shadow: 4px 6px 20px rgba(0,0,0,0.5);
+      margin: auto;
+    }
+
+.profile-photo {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+
+.photo-info {
+      background: #e0e0e0;
+      padding: 6px;
+      border-radius: 0 0 12px 12px;
+    }
+
+.photo-info h3,
+.photo-info h4 {
+      margin: 0;
+      padding: 2px;
+    }
+.photo-info h4 { font-size: 14px; color: #003f8c; }
+
+    /* ================= LAYOUT ================= */
+.content-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+.text-me {
+      flex: 1;
+      min-width: 320px;
+    }
